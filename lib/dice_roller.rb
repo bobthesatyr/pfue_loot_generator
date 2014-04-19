@@ -1,4 +1,4 @@
-class DiceRoller
+module DiceRoller
 
   # takes input as a string
   # string should be in format of (number)d(number)x(multiplier)+(number)

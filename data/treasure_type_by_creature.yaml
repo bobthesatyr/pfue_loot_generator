@@ -1,0 +1,29 @@
+:type:
+  "aberration": ['A', 'B', 'D', 'E']
+  "cunning aberration": ['A', 'B', 'D', 'E', 'F', 'G', 'H']
+  "animal": ['A', 'B', 'D', 'E']
+  "construct": ['E', 'F']
+  "construct guard": ['B', 'C', 'E', 'F', 'H']
+  "dragon": ['A', 'B', 'C', 'H', 'I']
+  "fey": ['B', 'C', 'D', 'G']
+  "humanoid": ['A', 'B', 'D', 'E', 'F', 'G']
+  "humanoid community": ['A', 'B', 'D', 'E', 'F', 'G', 'H']
+  "magical beast": ['A', 'B', 'D', 'E']
+  "monstrous humanoid": ['A', 'B', 'C', 'D', 'E', 'H']
+  "ooze": ['A', 'B', 'D']
+  "outsider": ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+  "plant": ['A', 'B', 'D', 'E']
+  "undead": ['A', 'B', 'D', 'E']
+  "intelligent undead": ['A', 'B', 'D', 'E', 'F', 'G']
+  "vermin": ['A', 'B', 'D']
+  "untyped": ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+:file:
+  'A':
+  'B':
+  'C':
+  'D':
+  'E':
+  'F':
+  'G':
+  'H':
+  'I':
