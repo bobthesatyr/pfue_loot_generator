@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require_relative '../lib/loot_generator.rb'
+
+LootGenerator.new(level, speed, type, multiplier)
