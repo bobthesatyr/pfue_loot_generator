@@ -1,4 +1,18 @@
 #!/usr/bin/env ruby
 require_relative '../lib/loot_generator.rb'
 
-LootGenerator.new(level, speed, type, multiplier)
+generator = LootGenerator.new
+
+puts "What level was the encounter? (Please type a number between 1 and 20)"
+level = gets.to_i
+puts "At what speed is treasure being gained? (slow, medium, fast)"
+speed = gets.downcase
+puts "What creature did this treasure come from?
+(aberration, cunning aberration, animal, construct, construct guard, dragon,
+fey, humanoid, humanoid community, magical beast, monstrous humanoid, ooze,
+outsider, plant, undead, intelligent undead, vermin, or untyped)"
+type = gets.downcase
+puts "Does this treasure have a multiplier in the treasure line? (incidental, standard, double, triple)"
+multiplier = gets.downcase
+
+generator.generate(level, speed, type, multiplier).each {|treasure| puts treasure}
