@@ -1,0 +1,124 @@
+50000:
+  :gp:
+    - 'pp:d4dx10'
+  :gemstones:
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade4'
+    - 'grade4'
+    - 'grade4'
+    - 'grade4'
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade6'
+    - 'grade6'
+    - 'grade6'
+    - 'grade6'
+    - 'grade6'
+    - 'grade6'
+    - 'grade6'
+    - 'grade6'
+20000:
+  :gp:
+    - 'gp:4d8x100'
+    - 'pp:6d10x10'
+  :gemstones:
+    - 'grade6'
+    - 'grade6'
+    - 'grade6'
+10000:
+  :gemstones:
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade6'
+5000:
+  :gemstones:
+    - 'grade6'
+2500:
+  :gp:
+    - 'gp:2d4x100'
+  :gemstones:
+    - 'grade4'
+    - 'grade4'
+    - 'grade5'
+1000:
+  :gemstones:
+    - 'grade5'
+750:
+  :gp:
+    - 'gp:2d4x10'
+  :gemstones:
+    - 'grade2'
+    - 'grade2'
+    - 'grade3'
+    - 'grade4'
+500:
+  :gemstones:
+    - 'grade4'
+250:
+  :gp:
+    - 'gp:2d4x10'
+  :gemstones:
+    - 'grade2'
+    - 'grade2'
+    - 'grade3'
+00:
+  :gp:
+    - 'sp:3d6x10'
+    - 'gp:2d4x10'
+  :gemstones:
+    - 'grade1'
+    - 'grade1'
+    - 'grade1'
+    - 'grade1'
+    - 'grade3'
+150:
+  :gemstones:
+    - 'grade2'
+    - 'grade3'
+100:
+  :gemstones:
+    - 'grade3'
+75:
+  :gp:
+    - 'sp:1d4x10'
+    - 'gp:1d4'
+  :gemstones:
+    - 'grade1'
+    - 'grade1'
+    - 'grade2'
+50:
+  :gemstones:
+    - 'grade2'
+25:
+  :gp:
+    - 'sp:5d10'
+    - 'gp:1d4'
+  :gemstones:
+    - 'grade1'
+    - 'grade1'
+15:
+  :gp:
+    - 'cp:2d6x10'
+    - 'sp:4d8'
+    - 'gp:1d4'
+  :gemstones:
+    - 'grade1'
+10:
+  :gemstones:
+    - 'grade1'

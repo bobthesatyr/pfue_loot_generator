@@ -1,0 +1,96 @@
+50000:
+  :art:
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade3'
+    - 'grade4'
+    - 'grade4'
+    - 'grade4'
+    - 'grade4'
+    - 'grade4'
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade5'
+    - 'grade6'
+    - 'grade6'
+20000:
+  :art:
+    - 'grade5'
+    - 'grade5'
+    - 'grade6'
+15000:
+  :art:
+    - 'grade5'
+    - 'grade6'
+10000:
+  :art:
+    - 'grade6'
+7500:
+  :art:
+    - 'grade3'
+    - 'grade4'
+    - 'grade4'
+    - 'grade5'
+5000:
+  :art:
+    - 'grade5'
+2500:
+  :art:
+    - 'grade2'
+    - 'grade2'
+    - 'grade2'
+    - 'grade2'
+    - 'grade2'
+    - 'grade3'
+    - 'grade3'
+    - 'grade4'
+2000:
+  :art:
+    - 'grade4'
+    - 'grade4'
+1500:
+  :art:
+    - 'grade3'
+    - 'grade4'
+1000:
+  :art:
+    - 'grade4'
+750:
+  :art:
+    - 'grade1'
+    - 'grade1'
+    - 'grade1'
+    - 'grade2'
+    - 'grade2'
+    - 'grade3'
+500:
+  :art:
+    - 'grade3'
+250:
+  :art:
+    - 'grade1'
+    - 'grade1'
+    - 'grade1'
+    - 'grade2'
+200:
+  :art:
+    - 'grade2'
+    - 'grade2'
+150:
+  :art:
+    - 'grade1'
+    - 'grade2'
+100:
+  :art:
+    - 'grade2'
+50:
+  :art:
+    - 'grade1'

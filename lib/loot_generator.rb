@@ -2,14 +2,15 @@ require_relative 'dice_roller.rb'
 
 class LootGenerator
   include DiceRoller
-  attr_accessor :treasure_value_by_level, :treasure_type_by_creature
+  attr_accessor :treasure_value_by_level, :treasure_type_by_creature, :type_list
 
   def initialize
     self.treasure_value_by_level = load_data 'treasure_value_by_level'
     self.treasure_type_by_creature = load_data 'treasure_type_by_creature'
+    self.type_list = {}
     self.type_list['A'] = load_data 'type_a_coins'
-    #self.type_list['B'] = load_data 'type_b_coins_and_gems'
-    #self.type_list['C'] = load_data 'type_c_art_objects'
+    self.type_list['B'] = load_data 'type_b_coins_and_gems'
+    self.type_list['C'] = load_data 'type_c_art_objects'
     #self.type_list['D'] = load_data 'type_d_coins_and_small_objects'
     #self.type_list['E'] = load_data 'type_e_armor_and_weapons'
     #self.type_list['F'] = load_data 'type_f_combatant_gear'
@@ -22,7 +23,7 @@ class LootGenerator
     budget = determine_budget(treasure_level, gain_speed, budget_modifier)
     list = determine_loot_list(creature_type, budget)
     loot = []
-    #generate_gp(loot, list[:gp]) if list[:gp]
+    generate_gp(loot, list[:gp]) if list[:gp]
     #generate_gemstones(loot, list[:gemstones]) if list[:gemstones]
     #generate_art(loot, list[:art]) if list[:art]
     #generate_potions(loot, list[:potions]) if list[:potions]
@@ -60,8 +61,30 @@ class LootGenerator
     end
   end
 
+  def grab_percentile_item(list_hash)
+    roll = roll_any('d100')
+    list_hash.each do |key, item|
+      if roll <= key
+        return item
+      end
+    end
+  end
+
+  def uncommon_check
+    roll_any('d100') > 75 ? 'uncommon' : 'common'
+  end
+
+  def generate_gp(loot, list)
+    types = {:cp => 0, :sp => 0, :gp => 0, :pp => 0}
+    list.each do |amount|
+      treasure = amount.split(':')
+      types[treasure[0].intern] = types[treasure[0].intern] + roll_any(treasure[1])
+    end
+    loot << "#{types[:cp]} Copper, #{types[:sp]} Silver, #{types[:gp]} Gold, and #{types[:pp]} Platinum"
+  end
+
   def load_data(file_name)
-    data_root = File.dirname(__FILE__) + '/../data'
+    data_root = File.dirname(__FILE__) + '/../data/'
     YAML::load_file(File.open(data_root + file_name + '.yaml'))
   end
 end
