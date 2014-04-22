@@ -6,10 +6,12 @@ module DiceRoller
     roll_total = 0
     roll_set = dice_string.split('+')
     roll_set.each do |roll|
-      dice = roll.match(/(?<die_number>\d+)d(?<die_size>\d+)x?(?<multiple>\d*)?/m)
+      dice = roll.match(/(?<die_number>\d+)?d(?<die_size>\d+)x?(?<multiple>\d*)?/m)
       if dice
         mini_total = 0
-        dice[:die_number].to_i.times do
+        if dice[:die_number]
+          dice[:die_number].to_i.times { mini_total = mini_total + Random.rand(1..dice[:die_size].to_i) }
+        else
           mini_total = mini_total + Random.rand(1..dice[:die_size].to_i)
         end
         mini_total = mini_total * dice[:multiple].to_i unless dice[:multiple].empty?
